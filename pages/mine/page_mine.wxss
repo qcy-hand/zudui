@@ -1,0 +1,54 @@
+/* pages/mine/page_mine.wxss */
+.name_mine {
+    width: 100vw;
+    height: 15vh;
+    margin: 0 0 3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tx_mine {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Input_mine {
+    width: 29vw;
+    height: 22vh;
+    padding-left: 4vw;
+}
+
+.Input_Nick_mine {
+    height: 6vw;
+    margin-top: 11vw;
+    color: #333366;
+    font-size: 65%;
+    border-bottom: 1px solid #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Input_trans_mine {
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .Input_location {
+    list-style: none;
+    color: #336666;
+    font-size: 80%;
+} */
+.Input_mine li {
+    list-style: none;
+    color: #24343b;
+    font-size: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

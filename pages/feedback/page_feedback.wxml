@@ -1,0 +1,14 @@
+<!-- pages/feedback/page_feedback.wxml -->
+<view>
+    <!-- textarea绑定了失去焦点时的事件 -->
+    <form bindsubmit="fabiao">
+        <textarea value="{{concent}}" bindblur="bindTextAreaBlur" focus="{{focus}}" placeholder="请输入您遇到的问题或建议（最多300字）" name="" id="" cols="30" rows="10" maxlength="300" style="font-size:75%;"></textarea>
+        <view class="feed_button">
+        <van-button slot="button" size="small" type="primary" form-type="submit" bind:click="Ntime" class="feed_button" >提交</van-button>
+        </view>
+        <!-- //点击按钮时把textarea中的内容保存在这里 -->
+         <!-- <view>{{concent}}{{Nowtime}}</view> -->
+    </form>
+    
+   
+</view>

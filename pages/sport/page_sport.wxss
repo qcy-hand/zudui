@@ -1,0 +1,25 @@
+/* pages/car/page_car.wxss */
+
+.headpic{
+width: 10vw;
+height: 10vw;
+padding:0 0 0 4vw;
+}
+.Nickname{
+    font-size: 70%;
+    height: 10vw;
+    line-height: 10vw;
+    padding: 0 0 0 3vw;
+}
+.push{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 77%;
+}
+.item{
+    width:93vw;
+    padding: 1vw 0 0 0;
+}

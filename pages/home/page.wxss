@@ -1,0 +1,213 @@
+/* pages/home/page.wxss */
+li {
+    list-style: none;
+}
+swiper-item {
+    overflow: scroll;
+  }
+
+image {
+    width: 0px;
+    height: 0px;
+}
+
+.hezi {
+    margin: 1vw 0 1vw 0;
+    border-radius: 17px;
+}
+
+.beijing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    width: 100vw;
+    height: 15vh;
+    margin: 0 0 5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tx {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Input {
+    width: 25vw;
+    height: 22vh;
+    padding-left: 4vw;
+}
+
+.Input_Nick {
+    height: 6vw;
+    margin-top: 11vw;
+    color: #333366;
+    font-size: 65%;
+    border-bottom: 1px solid #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Input_trans {
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Input li {
+    list-style: none;
+    color: #24343b;
+    font-size: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car,
+.sport,
+.study,
+.customize {
+    width: 76vw;
+    height: 15vh;
+    background-color: rgba(153, 153, 153, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.car_img {
+    width: 17vw;
+    height: 17vw;
+    padding: 0 13vw 0 10vw;
+}
+
+.sport_img {
+    width: 22vw;
+    height: 22vw;
+    padding: 0 10vw 0 8vw;
+}
+
+.study_img {
+    width: 12.5vw;
+    height: 12.5vw;
+    padding: 0 15vw 0 13vw;
+}
+
+.customize_img {
+    width: 16vw;
+    height: 16vw;
+    padding: 0 12vw 0 12vw;
+}
+
+.car_li,
+.sport_li,
+.study_li {
+    display: flex;
+    flex-direction: column;
+}
+
+.daohang {
+    position: fixed;
+    
+    /* bottom: 0vh; */
+}
+
+
+
+/* page_history页面 */
+
+.back_picture {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url(./img/back.jpg); */
+    /* background-size: 100% 100%; */
+    text-align: center;
+}
+
+.circle {
+    width: 100vw;
+    height: 20vh;
+    border: 2px solid;
+    border-color: transparent transparent #333366;
+    border-bottom-right-radius: 50% 240%;
+    border-bottom-left-radius: 50% 240%;
+    /* border-radius: 0 0 90% 90%/0 0 120% 120% ; */
+    border-top: none;
+}
+
+.renwu {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+.renwu_title {
+    width: 30vw;
+    height: 8vw;
+    border-radius:5vw;
+    line-height: 8vw;
+    font-size: 80%;
+    background-color:rgba(153,153,153,0.3);
+}
+
+/* mine页面 */
+.name_mine {
+    width: 100vw;
+    height: 14vh;
+    margin: 0 0 3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tx_mine {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Input_mine {
+    width: 25vw;
+    height: 22vh;
+    padding-left: 4vw;
+}
+
+.Input_Nick_mine {
+    height: 6vw;
+    margin-top: 11vw;
+    color: #333366;
+    font-size: 65%;
+    border-bottom: 1px solid #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Input_trans_mine {
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Input_mine li {
+    list-style: none;
+    color: #336666;
+    font-size: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

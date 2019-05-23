@@ -1,0 +1,7 @@
+/* pages/feedback/page_feedback.wxss */
+
+.feed_button{
+display: flex;
+justify-content: flex-end;
+padding:0 3vw 0 0;
+}

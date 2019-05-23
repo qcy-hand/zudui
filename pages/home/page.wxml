@@ -1,0 +1,142 @@
+<swiper current="{{currentData}}" class='swiper' style="height:100vh;" duration="300" bindchange='swiperChange'>
+    <swiper-item>
+        <scroll-view scroll-y style="height: 100vh;">
+            <view class="beijing">
+                <view class="name ">
+                    <view class="tx">
+                        <open-data type="userAvatarUrl"></open-data>
+                    </view>
+                    <view class="Input">
+                        <view class="Input_Nick">
+                            <open-data type="userNickName"></open-data>
+                        </view>
+                        <view class="Input_trans">
+                            <!-- <view class="Input_location">
+            <open-data type="userCity"></open-data>
+             <open-data type="userGender"></open-data>
+            </view> -->
+                            <li type="text">全宇宙最棒的崽~</li>
+                            <!-- <button style="height:8vw;font-size:90%;border-radius: 12px;background-color: rgb(255, 228, 0);display: flex;align-items: center;">切換<image src="../../image/qh1.png" alt="" class="trans_img"  />
+                    </button> -->
+                        </view>
+                    </view>
+                    <!-- <view style="width:4vw;"></view>
+        <view class="share">
+            
+            <van-icon name="share" size="11vw" click="" />
+            <view style="font-size:65%;color:rgb(0, 0, 0);">分享</view>
+        </view> -->
+                </view>
+                <view class="car hezi" bindtap="tz_car">
+                    <view>
+                        <image src="https://neauhand.hhp.im/img/pc1.png" class="car_img"></image>
+                    </view>
+                    <view class="car_li">
+                        <li style="font-size:95%; color:#333366; padding:0 0 2vw 0;">组队拼车</li>
+                        <li style="color:#336666;font-size:75%; ">Car pooling</li>
+                    </view>
+                </view>
+                <view class="sport hezi" bindtap="tz_sport">
+                    <view>
+                        <image src="https://neauhand.hhp.im/img/yd2.png" alt="" class="sport_img"></image>
+                    </view>
+                    <view class="sport_li">
+                        <li style="font-size:95%; color:#333366; padding:0 0 2vw 0;">
+                            组队运动{{userAvatarUrl}}
+                        </li>
+                        <li style="color:#336666;font-size:75%;">Team sports</li>
+                    </view>
+                </view>
+                <view class="study hezi" bindtap="tz_study">
+                    <view>
+                        <image src="https://neauhand.hhp.im/img/xx1.png" alt="" class="study_img"></image>
+                    </view>
+                    <view class="study_li">
+                        <li style="font-size:95%; color:#333366; padding:0 0 2vw 0;">组队学习</li>
+                        <li style="color:#336666;font-size:75%;">Team learning</li>
+                    </view>
+                </view>
+                <view class="customize hezi" bindtap="tz_customize">
+                    <view>
+                        <image src="https://neauhand.hhp.im/img/zdy1.png" alt="" class="customize_img"></image>
+                    </view>
+                    <view class="study_li">
+                        <li style="font-size:95%; color:#333366; padding:0 0 2vw 0;">自定义</li>
+                        <li style="color:#336666;font-size:75%;">Custom items</li>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 历史feedback -->
+    <swiper-item>
+        <view class="back_picture">
+            <view>
+                <!-- <view style="height:20px;"></view> -->
+                <view class="circle">
+                    <view style="font-size:330%;font-weight:bolder;">1</view>
+                    <!-- <view style="height:2vw;"></view> -->
+                    <view style="color:#990033;font-size:80%;">* 发布次数 *</view>
+                </view>
+            </view>
+            <view style="height:4vw;"></view>
+            <view class="renwu">
+                <view class="renwu_title">历史活动</view>
+            </view>
+            <view style="height:4vw;"></view>
+        </view>
+        <view style="text-align:center; position: relative; bottom: 1px;width:100vw;height:13vh;font-size:65%;">
+            已经到底了哦~
+        </view>
+    </swiper-item>
+    <!-- 我的mine -->
+    <swiper-item>
+
+        <view class="minepage">
+               <view style="height:10vw;"></view>
+            <view class="name_mine">
+                <view class="tx_mine ">
+                    <open-data type="userAvatarUrl"></open-data>
+                </view>
+                <view class="Input_mine ">
+                    <view class="Input_Nick_mine ">
+                        <open-data type="userNickName"></open-data>
+                    </view>
+                    <view class="Input_trans_mine ">
+                        <li type="text">全宇宙最棒的崽~</li>
+                    </view>
+                </view>
+            </view>
+            <view class="cell">
+                <view style="height:10vw;"></view>
+                <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+                <van-cell title="发布历史" is-link url="/pages/history/page_history" link-type="navigateTo" />
+                <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+                <van-cell title="提交反馈" is-link url="/pages/feedback/page_feedback" link-type="navigateTo" />
+                <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+                <van-cell title="使用注意" is-link url="/pages/attention/page_attention" link-type="navigateTo" />
+                <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+                <view style="font-size:50%;text-align:center;color: #333366;">更多好用功能敬请期待！</view>
+            </view>
+        </view>
+    </swiper-item>
+</swiper>
+<view class="daohang">
+    <van-tabbar active="{{ active }}" bind:change="onChange">
+        <van-tabbar-item>
+            <image slot="icon" src="{{ icon.normal }}" mode="aspectFit" />
+            <image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" />
+            主页
+        </van-tabbar-item>
+        <van-tabbar-item>
+            <image slot="icon" src="{{ icon1.normal }}" mode="aspectFit" />
+            <image slot="icon-active" src="{{ icon1.active }}" mode="aspectFit" />
+            历史
+        </van-tabbar-item>
+        <van-tabbar-item>
+            <image slot="icon" src="{{ icon2.normal }}" mode="aspectFit" />
+            <image slot="icon-active" src="{{ icon2.active }}" mode="aspectFit" />
+            我的
+        </van-tabbar-item>
+    </van-tabbar>
+</view>

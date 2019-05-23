@@ -1,0 +1,13 @@
+/* pages/attention/page_attention.wxss */
+.attentionbox {
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+    text-align: center;
+    background-color: rgb(251, 251, 251);
+
+}

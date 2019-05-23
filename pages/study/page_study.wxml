@@ -1,0 +1,55 @@
+<!-- pages/car/page_car.wxml -->
+<view class="head_input">
+  <van-cell title="时间" icon="clock-o" is-link bind:click="onTap" value="{{time}}" />
+  <!-- <van-cell title="地点" icon="location-o" is-link bind:click="chooseLocationStart" value="{{didian}}" center="{{true}}" /> -->
+  <van-cell-group>
+    <!-- 输入框 -->
+    <van-field value="{{ didian_study }}" left-icon="location-o" center clearable label="地点" placeholder="教学楼or成栋？" border="{{ false }}" bind:input="Location_study" use-button-slot></van-field>
+  </van-cell-group>
+  <van-cell-group>
+    <!-- 输入框 -->
+    <van-field value="{{ id_study }}" center clearable label="学习项目" placeholder="蹭课背书上自习..." border="{{ false }}" bind:input="Input_study" use-button-slot></van-field>
+  </van-cell-group>
+  <van-cell-group>
+    <!-- 输入框 -->
+    <van-field value="{{ id_mess }}" center clearable label="联系方式" placeholder="官方更建议输入QQ或者微信号" border="{{ false }}" bind:input="Input_mess" use-button-slot></van-field>
+  </van-cell-group>
+  <van-cell-group>
+    <!-- 输入框 -->
+    <van-field value="{{ beizhu }}" center clearable label="备注" placeholder="说点你想补充的" border="{{ false }}" bind:input="Input_beizhu" use-button-slot>
+      <van-button slot="button" size="small" type="primary" bind:click="Ntime">发布</van-button>
+    </van-field>
+  </van-cell-group>
+  <!-- 弹出框 -->
+  <van-popup show="{{ showTime }}" position="bottom" overlay="{{ true }}" bind:click-overlay="onClose">
+    <!-- 时间选择器 -->
+    <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:confirm="onInput" bind:cancel="onClose" />
+  </van-popup>
+</view>
+<view style="height:10vw;background-color:rgb(251,251,251);"></view>
+<!-- 输出面板 -->
+<view class="content">
+  <view class='content' wx:for="{{articleArr_study}}" wx:key="Nowtime_study">
+    <view style="display:flex;justify-content:flex-start;">
+      <!-- <image class="headpic" src="../../image/tx1.png"></image> -->
+      <view class="Nickname">昵称</view>
+    </view>
+    <van-panel desc="发布时间:{{item.NowTime}}">
+      <view class="push">
+        <view class="item">时间：{{item.time}}</view>
+        <view class="item">地点：{{item.didian_study}}</view>
+        <view class="item">学习项目：{{item.id_study}}</view>
+      </view>
+      <van-collapse value="{{ activeNames }}" bind:change="onChange">
+        <van-collapse-item value="一起进步" icon="records" name="2">
+          <view>联系方式：{{ item.id_mess }}</view>
+          <view>备注:{{ item.beizhu }}</view>
+        </van-collapse-item>
+      </van-collapse>
+      <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+    </van-panel>
+  </view>
+</view>
+<view style="text-align:center; position: relative; bottom: 1px;width:100vw;height:7vh;font-size:65%;">
+  已经到底了哦~
+</view>

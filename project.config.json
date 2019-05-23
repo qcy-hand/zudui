@@ -1,0 +1,111 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wxcc7099c108747223",
+	"projectname": "Team",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": 0,
+					"name": "history",
+					"pathName": "pages/history/page_history",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "car",
+					"pathName": "pages/car/page_car",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/page",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "sport",
+					"pathName": "pages/sport/page_sport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "study",
+					"pathName": "pages/study/page_study",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customize",
+					"pathName": "pages/customize/page_customize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/page_mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "feedback",
+					"pathName": "pages/feedback/page_feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "attention",
+					"pathName": "pages/attention/page_attention",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

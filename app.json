@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/home/page",
+    "pages/car/page_car",
+    "pages/sport/page_sport",
+    "pages/study/page_study",
+    "pages/customize/page_customize",
+    "pages/history/page_history",
+    "pages/mine/page_mine",
+    "pages/attention/page_attention",
+    "pages/feedback/page_feedback"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "组队",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

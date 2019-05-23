@@ -1,0 +1,20 @@
+<!-- pages/card/page_card.wxml -->
+<view class="back_picture">
+    <view>
+        <!-- <view style="height:20px;"></view> -->
+        <view class="circle">
+            <view style="font-size:330%;font-weight:bolder;">1</view>
+            <!-- <view style="height:2vw;"></view> -->
+            <view style="color:#990033;font-size:80%;">* 发布次数 *</view>
+        </view>
+    </view>
+    <view style="height:4vw;"></view>
+    <view class="renwu">
+        <view class="renwu_title">历史活动</view>
+    </view>
+    <view style="height:4vw;"></view>
+   
+</view>
+ <view style="text-align:center; position: relative; bottom: 1px;width:100vw;height:13vh;font-size:65%;">
+        已经到底了哦~
+    </view>

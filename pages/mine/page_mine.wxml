@@ -1,0 +1,27 @@
+<!-- pages/mine/page_mine.wxml -->
+<view class="minepage">
+    <view class="name_mine ">
+        <view class="tx_mine">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="Input_mine">
+            <view class="Input_Nick_mine">
+                <open-data type="userNickName"></open-data>
+            </view>
+            <view class="Input_trans_mine">
+                <li type="text">全宇宙最棒的崽~</li>
+            </view>
+        </view>
+    </view>
+    <view class="cell">
+        <view style="height:10vw;"></view>
+        <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+        <van-cell title="发布历史" is-link url="/pages/history/page_history" link-type="navigateTo" />
+        <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+        <van-cell title="提交反馈" is-link url="/pages/feedback/page_feedback" link-type="navigateTo" />
+        <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+        <van-cell title="使用注意" is-link url="/pages/attention/page_attention" link-type="navigateTo" />
+        <view style="height:5vw;background-color:rgb(251,251,251);"></view>
+        <view style="font-size:50%;text-align:center;color: #333366;">更多好用功能敬请期待！</view>
+    </view>
+</view>

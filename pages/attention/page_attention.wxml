@@ -1,0 +1,8 @@
+<!-- pages/attention/page_attention.wxml -->
+<view class="attentionbox">
+    <view >
+    <view style="margin:5vw 0 5vw 0">尊重隐私</view>
+    <view style="margin:5vw 0 5vw 0">抵制低俗</view>
+    <view style="margin:5vw 0 5vw 0">践行文明</view>
+    </view>
+</view>
